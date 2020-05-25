@@ -1,3 +1,9 @@
-list1 = [12, "Hello", 4.56, None, [2, 3, 4], True, 56]
-for i in range(len(list1)):
-    print(type(list1[i]))
+from sys import argv
+
+name, hours, rate, bonus = argv
+
+def func_salary(hour, rat, bon):
+    salary = int(hour) * int(rat) + int(bon)
+    return salary
+
+print("Your salary is " + str(func_salary(hours, rate, bonus)))
