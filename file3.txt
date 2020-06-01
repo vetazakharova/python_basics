@@ -1,0 +1,7 @@
+Alex - 40000
+Fred - 50000
+Lila - 60000
+Sam - 15000
+Chris - 10000
+Rose - 50000
+Ronnie - 7000
