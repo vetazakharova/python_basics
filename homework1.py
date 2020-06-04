@@ -1,3 +1,21 @@
-list1 = [12, "Hello", 4.56, None, [2, 3, 4], True, 56]
-for i in range(len(list1)):
-    print(type(list1[i]))
+from time import sleep
+
+
+class TrafficLight:
+    __color = ['Красный', 'Желтый', 'Зеленый']
+
+    def running(self):
+        i = 0
+        while i < 3:
+            print(f'Светофор переключается {TrafficLight.__color[i]}')
+            if i == 0:
+                sleep(7)
+            elif i == 1:
+                sleep(3)
+            elif i == 2:
+                sleep(5)
+            i += 1
+
+
+TrafficLight = TrafficLight()
+TrafficLight.running()
